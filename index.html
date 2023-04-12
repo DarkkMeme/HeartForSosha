@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анімація сердечка</title>
+    <style>
+		body {
+			background-color: #f9f9f9;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.heart {
+			animation: pulse 1s ease-in-out infinite;
+			transform-origin: center;
+		}
+		@keyframes pulse {
+			0% { transform: scale(1); }
+			50% { transform: scale(1.2); }
+			100% { transform: scale(1); }
+		}
+	</style>
+</head>
+<body>
+<div class="heart">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="128" height="128"><path fill="#ff0048" d="M474.63 76.53c-45.25-59.7-119-59.7-164.25 0L256 120.37l-54.38-43.84c-45.25-59.7-119-59.7-164.25 0-43.62 57.68-43.62 143.15 0 200.83L256 471.13l218.63-175.77c43.62-57.68 43.62-143.15 0-200.83z"/></svg>
+</div>
+</body>
+</html>
