@@ -5,9 +5,12 @@
     <style>
 		body {
 			background-color: #f9f9f9;
+		}
+		.container {
 			display: flex;
-			justify-content: center;
+			flex-direction: column;
 			align-items: center;
+			justify-content: center;
 			height: 100vh;
 		}
 		.heart {
@@ -19,11 +22,22 @@
 			50% { transform: scale(1.2); }
 			100% { transform: scale(1); }
 		}
+		.text{
+			text-align: center;
+			margin-top: 20px;
+		}
 	</style>
 </head>
 <body>
-<div class="heart">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="128" height="128"><path fill="#ff0048" d="M474.63 76.53c-45.25-59.7-119-59.7-164.25 0L256 120.37l-54.38-43.84c-45.25-59.7-119-59.7-164.25 0-43.62 57.68-43.62 143.15 0 200.83L256 471.13l218.63-175.77c43.62-57.68 43.62-143.15 0-200.83z"/></svg>
-</div>
+	<div class="container">
+		<div class="heart">
+			<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="128" height="128"><path fill="#ff0048" d="M474.63 76.53c-45.25-59.7-119-59.7-164.25 0L256 120.37l-54.38-43.84c-45.25-59.7-119-59.7-164.25 0-43.62 57.68-43.62 143.15 0 200.83L256 471.13l218.63-175.77c43.62-57.68 43.62-143.15 0-200.83z"/></svg></p>
+		</div>
+		<div class="text">
+			<p><h1>Ти моє серденько</h1></p>
+			<p><h1>Ти дуже гарна</h1></p>
+			<p><h1>Я тебе дуже і дуже сильно люблю</h1></p>
+		</div>
+	</div>
 </body>
 </html>
